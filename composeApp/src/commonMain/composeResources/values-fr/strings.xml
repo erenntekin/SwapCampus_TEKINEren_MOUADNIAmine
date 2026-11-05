@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_brand">SwapCampus</string>
+    <string name="back">Retour</string>
+    <string name="cancel">Annuler</string>
+    <string name="edit">Modifier</string>
+    <string name="delete">Supprimer</string>
+    <string name="log_in">Se connecter</string>
+    <string name="log_out">Se déconnecter</string>
+    <string name="my_listings">Mes annonces</string>
+    <string name="post_short">Vendre</string>
+    <string name="nav_listings">Annonces</string>
+    <string name="nav_profile">Profil</string>
+
+    <string name="category_all">Tout</string>
+    <string name="category_books">Livres</string>
+    <string name="category_courses">Cours</string>
+    <string name="category_electronics">Électronique</string>
+    <string name="category_sports_leisure">Sport &amp; loisirs</string>
+    <string name="category_furniture">Mobilier</string>
+    <string name="category_clothing">Vêtements</string>
+    <string name="category_other">Autre</string>
+
+    <string name="status_available">Disponible</string>
+    <string name="status_reserved">Réservée</string>
+    <string name="status_sold">Vendue</string>
+    <string name="status_reserved_by">Réservée pour %1$s</string>
+    <string name="status_sold_on">Vendue le %1$s</string>
+    <string name="role_student">Étudiant</string>
+    <string name="role_administrator">Administrateur</string>
+
+    <string name="greeting_user">Bonjour %1$s</string>
+    <string name="greeting_guest">Bienvenue sur SwapCampus</string>
+    <string name="listings_headline">Trouvez la bonne affaire du campus</string>
+    <string name="search_hint">Un manuel, un vélo…</string>
+    <string name="clear_search">Effacer la recherche</string>
+    <string name="no_results_title">Aucune annonce trouvée</string>
+    <string name="no_results_message">Essayez un autre mot-clé ou une autre catégorie.</string>
+    <string name="error_title">Un problème est survenu</string>
+    <string name="error_load_listings">Impossible de charger les annonces. Réessayez.</string>
+
+    <string name="listing_not_found_title">Annonce introuvable</string>
+    <string name="listing_not_found_message">Elle a peut-être été supprimée par son vendeur.</string>
+    <string name="detail_meta">%1$s · publiée le %2$s</string>
+    <string name="no_description">Aucune description.</string>
+    <string name="sold_by">Vendu par %1$s</string>
+    <string name="reserve">Réserver</string>
+    <string name="reserve_title">Réserver cet objet</string>
+    <string name="field_buyer">Nom ou e-mail de l'acheteur</string>
+    <string name="mark_as_sold">Marquer vendue</string>
+    <string name="cancel_reservation">Annuler la réservation</string>
+    <string name="put_back_for_sale">Remettre en vente</string>
+    <string name="delete_title">Supprimer cette annonce ?</string>
+    <string name="delete_message">L'annonce sera définitivement supprimée.</string>
+
+    <string name="form_post_title">Nouvelle annonce</string>
+    <string name="form_edit_title">Modifier l'annonce</string>
+    <string name="publish">Publier</string>
+    <string name="save_changes">Enregistrer</string>
+    <string name="section_category">Catégorie</string>
+    <string name="field_title">Titre</string>
+    <string name="field_price">Prix</string>
+    <string name="field_description">Description</string>
+    <string name="field_photo_url">URL de la photo (facultatif)</string>
+    <string name="error_title_blank">Donnez un titre à votre annonce.</string>
+    <string name="error_price_not_number">Saisissez un prix, par exemple 15 ou 12,50.</string>
+    <string name="error_price_not_positive">Le prix doit être supérieur à 0.</string>
+    <string name="error_not_owner">Seul le vendeur peut modifier cette annonce.</string>
+    <string name="error_login_required">Connectez-vous pour publier une annonce.</string>
+    <string name="error_admin_cannot_post">Les administrateurs ne peuvent pas publier d'annonces.</string>
+    <string name="error_save_failed">Impossible d'enregistrer l'annonce. Elle a peut-être été vendue ou supprimée.</string>
+
+    <string name="login_subtitle">Le marché des étudiants : achetez, vendez et échangez sur le campus.</string>
+    <string name="field_email">E-mail</string>
+    <string name="field_password">Mot de passe</string>
+    <string name="demo_accounts">Comptes de démo</string>
+    <string name="error_invalid_credentials">E-mail ou mot de passe incorrect.</string>
+
+    <plurals name="my_listings_count">
+        <item quantity="one">%1$d annonce publiée</item>
+        <item quantity="other">%1$d annonces publiées</item>
+    </plurals>
+    <string name="no_my_listings_title">Aucune annonce pour l'instant</string>
+    <string name="no_my_listings_message">Transformez ce que vous n'utilisez plus en bonne affaire pour d'autres étudiants.</string>
+    <string name="admin_no_listings_message">Les administrateurs modèrent la plateforme et ne publient pas d'annonces.</string>
+
+    <string name="profile_title">Profil</string>
+    <string name="seller_stats">Mes ventes</string>
+    <string name="stat_posted">Publiées</string>
+    <string name="stat_available">Dispo.</string>
+    <string name="stat_reserved">Réservées</string>
+    <string name="stat_sold">Vendues</string>
+</resources>

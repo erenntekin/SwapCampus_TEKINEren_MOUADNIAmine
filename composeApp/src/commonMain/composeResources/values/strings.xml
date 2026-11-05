@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_brand">SwapCampus</string>
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="log_in">Log in</string>
+    <string name="log_out">Log out</string>
+    <string name="my_listings">My listings</string>
+    <string name="post_short">Sell</string>
+    <string name="nav_listings">Listings</string>
+    <string name="nav_profile">Profile</string>
+
+    <string name="category_all">All</string>
+    <string name="category_books">Books</string>
+    <string name="category_courses">Courses</string>
+    <string name="category_electronics">Electronics</string>
+    <string name="category_sports_leisure">Sports &amp; leisure</string>
+    <string name="category_furniture">Furniture</string>
+    <string name="category_clothing">Clothing</string>
+    <string name="category_other">Other</string>
+
+    <string name="status_available">Available</string>
+    <string name="status_reserved">Reserved</string>
+    <string name="status_sold">Sold</string>
+    <string name="status_reserved_by">Reserved for %1$s</string>
+    <string name="status_sold_on">Sold on %1$s</string>
+    <string name="role_student">Student</string>
+    <string name="role_administrator">Administrator</string>
+
+    <string name="greeting_user">Hi %1$s</string>
+    <string name="greeting_guest">Welcome to SwapCampus</string>
+    <string name="listings_headline">Find your next campus deal</string>
+    <string name="search_hint">Search a textbook, a bike…</string>
+    <string name="clear_search">Clear search</string>
+    <string name="no_results_title">No matching listings</string>
+    <string name="no_results_message">Try another keyword or category.</string>
+    <string name="error_title">Something went wrong</string>
+    <string name="error_load_listings">Listings could not be loaded. Please try again.</string>
+
+    <string name="listing_not_found_title">Listing not found</string>
+    <string name="listing_not_found_message">It may have been removed by its seller.</string>
+    <string name="detail_meta">%1$s · posted %2$s</string>
+    <string name="no_description">No description provided.</string>
+    <string name="sold_by">Sold by %1$s</string>
+    <string name="reserve">Reserve</string>
+    <string name="reserve_title">Reserve this item</string>
+    <string name="field_buyer">Buyer name or email</string>
+    <string name="mark_as_sold">Mark as sold</string>
+    <string name="cancel_reservation">Cancel reservation</string>
+    <string name="put_back_for_sale">Put back on sale</string>
+    <string name="delete_title">Delete this listing?</string>
+    <string name="delete_message">The listing will be permanently removed.</string>
+
+    <string name="form_post_title">New listing</string>
+    <string name="form_edit_title">Edit listing</string>
+    <string name="publish">Publish</string>
+    <string name="save_changes">Save changes</string>
+    <string name="section_category">Category</string>
+    <string name="field_title">Title</string>
+    <string name="field_price">Price</string>
+    <string name="field_description">Description</string>
+    <string name="field_photo_url">Photo URL (optional)</string>
+    <string name="error_title_blank">Give your listing a title.</string>
+    <string name="error_price_not_number">Enter a price, e.g. 15 or 12.50.</string>
+    <string name="error_price_not_positive">The price must be greater than 0.</string>
+    <string name="error_not_owner">Only the seller can edit this listing.</string>
+    <string name="error_login_required">Log in to post a listing.</string>
+    <string name="error_admin_cannot_post">Administrators cannot post listings.</string>
+    <string name="error_save_failed">The listing could not be saved. It may have been sold or removed.</string>
+
+    <string name="login_subtitle">The student marketplace: buy, sell and swap on campus.</string>
+    <string name="field_email">Email</string>
+    <string name="field_password">Password</string>
+    <string name="demo_accounts">Demo accounts</string>
+    <string name="error_invalid_credentials">Wrong email or password.</string>
+
+    <plurals name="my_listings_count">
+        <item quantity="one">%1$d listing posted</item>
+        <item quantity="other">%1$d listings posted</item>
+    </plurals>
+    <string name="no_my_listings_title">No listings yet</string>
+    <string name="no_my_listings_message">Turn what you no longer use into a deal for other students.</string>
+    <string name="admin_no_listings_message">Administrators moderate the platform and do not post listings.</string>
+
+    <string name="profile_title">Profile</string>
+    <string name="seller_stats">My sales</string>
+    <string name="stat_posted">Posted</string>
+    <string name="stat_available">Available</string>
+    <string name="stat_reserved">Reserved</string>
+    <string name="stat_sold">Sold</string>
+</resources>
