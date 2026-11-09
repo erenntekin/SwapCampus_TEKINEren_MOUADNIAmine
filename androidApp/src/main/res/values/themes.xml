@@ -1,0 +1,4 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Thème de la fenêtre uniquement : les couleurs de l'app sont définies en Compose (Theme.kt). -->
+    <style name="Theme.SwapCampus_MAMAAbbas" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>
