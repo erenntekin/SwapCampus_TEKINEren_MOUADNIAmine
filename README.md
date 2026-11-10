@@ -3,6 +3,7 @@
 SwapCampus is a classifieds app for students. It was built for the II.3510 Mobile Development course at ISEP (2026-2027).
 
 Labwork 2 team: Eren Tekin and Amine Mouadni.
+GitHub repository: https://github.com/erenntekin/SwapCampus_TEKINEren_MOUADNIAmine
 
 The app runs on Android and iOS from the same Kotlin code with Compose Multiplatform. The notes for Labwork 2 are in [LABWORK2.md](LABWORK2.md).
 

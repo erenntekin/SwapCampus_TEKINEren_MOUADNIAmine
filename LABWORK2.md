@@ -1,5 +1,8 @@
 # Labwork 2: SwapCampus on Android and iOS
 
+**Team:** Eren Tekin and Amine Mouadni  
+**GitHub repository:** https://github.com/erenntekin/SwapCampus_TEKINEren_MOUADNIAmine
+
 We started from our Labwork 1 app. Its `:composeApp` module was an Android library, so we first turned it into a Compose Multiplatform module, as in the tutorial. Then we followed the labwork steps.
 
 ## Step 1: inventory
