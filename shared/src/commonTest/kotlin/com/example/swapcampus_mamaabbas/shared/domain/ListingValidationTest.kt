@@ -19,6 +19,13 @@ class ListingValidationTest {
     }
 
     @Test
+    fun validateListing_rejectsNaNAndInfinity() {
+        // "NaN".toDoubleOrNull() is NaN, and NaN <= 0 is false: a boundary case found while preparing the talk
+        assertEquals(listOf(ListingError.NON_POSITIVE_PRICE), validateListing("Bike", Double.NaN))
+        assertEquals(listOf(ListingError.NON_POSITIVE_PRICE), validateListing("Bike", Double.POSITIVE_INFINITY))
+    }
+
+    @Test
     fun listing_throwsTypedErrorOnInvalidValues() {
         val exception = assertFailsWith<InvalidListingException> {
             Listing(1, "", "", 5.0, Category.OTHER, null, 1, Available, LocalDateTime(2026, 10, 7, 10, 0))

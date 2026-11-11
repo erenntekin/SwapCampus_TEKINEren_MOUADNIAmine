@@ -10,5 +10,6 @@ class InvalidListingException(val errors: List<ListingError>) :
 
 fun validateListing(title: String, price: Double): List<ListingError> = buildList {
     if (title.isBlank()) add(ListingError.BLANK_TITLE)
-    if (price <= 0) add(ListingError.NON_POSITIVE_PRICE)
+    // "NaN" and "Infinity" parse as Double, and NaN <= 0 is false: reject them explicitly
+    if (price.isNaN() || price.isInfinite() || price <= 0) add(ListingError.NON_POSITIVE_PRICE)
 }
