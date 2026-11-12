@@ -5,6 +5,8 @@ import kotlinx.datetime.LocalDateTime
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFailsWith
+import kotlin.test.assertNotEquals
+import kotlin.test.assertNotNull
 import kotlin.test.assertNull
 import kotlin.test.assertTrue
 
@@ -44,6 +46,20 @@ class ListingCatalogTest {
         assertNull(catalog.changeStatus(listing.id, Sold(LocalDate(2026, 10, 7))))
         assertEquals(Reserved("bob"), catalog.changeStatus(listing.id, Reserved("bob"))?.status)
         assertTrue(catalog.searchListings().isEmpty())
+    }
+
+    // Exercise 2 (solution)
+    @Test
+    fun repostListing_givesSoldListingNewIdAndAvailable() {
+        val listing = post()
+        catalog.changeStatus(listing.id, Reserved("bob"))
+        catalog.changeStatus(listing.id, Sold(LocalDate(2026, 10, 7)))
+
+        val copy = assertNotNull(catalog.repostListing(listing.id))
+
+        assertNotEquals(listing.id, copy.id)
+        assertEquals(Available, copy.status)
+        assertEquals(listing.title, copy.title)
     }
 
     @Test
