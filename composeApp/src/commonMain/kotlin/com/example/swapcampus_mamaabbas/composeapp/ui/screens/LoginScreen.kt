@@ -32,6 +32,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.style.TextAlign
@@ -100,7 +101,8 @@ fun LoginScreen(
         Button(
             onClick = { onLogin(email, password) },
             enabled = email.isNotBlank() && password.isNotBlank(),
-            modifier = Modifier.fillMaxWidth().height(52.dp),
+            // Stable selector for UI tests: on the "Log in" tab, the text "Log in" is both the tab and this button
+            modifier = Modifier.fillMaxWidth().height(52.dp).testTag("login_button"),
         ) {
             Text(stringResource(Res.string.log_in))
         }
