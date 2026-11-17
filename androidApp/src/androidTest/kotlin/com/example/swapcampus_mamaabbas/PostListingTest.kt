@@ -28,7 +28,7 @@ class PostListingTest {
 
     @Test
     fun postListing_whileLoggedOut_asksLoginThenPublishes() {
-        composeRule.onNodeWithText("Sell").performClick()
+        composeRule.onNodeWithText("Sell", useUnmergedTree = true).performClick() // the FAB text is only in the unmerged tree
         composeRule.onNodeWithText("Email").performTextInput("alice@isep.fr")
         composeRule.onNodeWithText("Password").performTextInput("1234")
         composeRule.onNodeWithTag("login_button").performClick()
@@ -43,7 +43,7 @@ class PostListingTest {
     // Exercise 3 (solution)
     @Test
     fun publish_withEmptyTitle_showsError() {
-        composeRule.onNodeWithText("Sell").performClick()
+        composeRule.onNodeWithText("Sell", useUnmergedTree = true).performClick()
         composeRule.fillLoginForm()
         composeRule.onNodeWithText("Price").performTextInput("10")
         composeRule.onNodeWithText("Publish").performScrollTo().performClick()

@@ -39,7 +39,7 @@ class DeviceTest {
     @Test
     fun postForm_survivesRotation_andSystemBackClosesIt() {
         composeRule.logInAsAlice()
-        composeRule.onNodeWithText("Sell").performClick()
+        composeRule.onNodeWithText("Sell", useUnmergedTree = true).performClick()
         composeRule.onNodeWithText("Title").performTextInput("Desk lamp")
 
         device.setOrientationLeft() // rotate the real device: the activity is recreated
@@ -49,15 +49,15 @@ class DeviceTest {
         device.setOrientationNatural()
         Espresso.closeSoftKeyboard() // otherwise the first Back only hides the keyboard
         device.pressBack() // system Back, outside our UI
-        composeRule.onNodeWithText("Sell").assertIsDisplayed()
+        composeRule.onNodeWithText("Sell", useUnmergedTree = true).assertIsDisplayed()
     }
 
     // Exercise 4 (solution)
     @Test
     fun detail_systemBack_returnsToList() {
         composeRule.onNodeWithText("Calculatrice TI-83").performClick()
-        composeRule.onNodeWithText("Sell").assertDoesNotExist() // we are on the detail screen
+        composeRule.onNodeWithText("Sell", useUnmergedTree = true).assertDoesNotExist() // we are on the detail screen
         device.pressBack()
-        composeRule.onNodeWithText("Sell").assertIsDisplayed()
+        composeRule.onNodeWithText("Sell", useUnmergedTree = true).assertIsDisplayed()
     }
 }
