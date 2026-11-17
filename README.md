@@ -23,4 +23,14 @@ iOS: on a Mac with Xcode 26.4, open `iosApp/iosApp.xcodeproj`, choose an iPhone 
 
 ## Tests
 
-`./gradlew :shared:testAndroidHostTest`
+Student presentation topic: Testing (unit, JUnit) & automated mobile testing (Espresso, UI Automator).
+The exercise for the class is in a separate repository: https://github.com/Tozomoukk/SwapCampus-Testing-UP
+
+| Tests | Folder | Tools | Command |
+|---|---|---|---|
+| Unit tests (domain, repository) | `shared/src/commonTest` | kotlin.test (JUnit 4 on Android), kotlinx-coroutines-test | `./gradlew :shared:testAndroidHostTest` |
+| UI tests ("post a listing" flow) | `androidApp/src/androidTest` | Compose test, Espresso, UI Automator | `./gradlew :androidApp:connectedAndroidTest` |
+
+The unit tests also run on the iOS simulator (Mac): `./gradlew :shared:iosSimulatorArm64Test`.
+The UI tests find screens by their English text: start the emulator in English before running them.
+Reports: `shared/build/reports/tests/` and `androidApp/build/reports/androidTests/`.
